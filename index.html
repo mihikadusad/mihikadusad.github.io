@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mihika Dusad</title>
+    <meta
+      name="description"
+      content="Personal website for Mihika Dusad: research, projects, sidequests, and media notes."
+    >
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="cover-stage" aria-hidden="true">
+      <div class="cover-panel cover-panel-left" id="coverLeft"></div>
+      <div class="cover-panel cover-panel-right" id="coverRight"></div>
+      <div class="cover-scrim"></div>
+    </div>
+
+    <header class="topbar">
+      <a class="brand" href="#home" aria-label="Mihika Dusad home">MD</a>
+
+      <nav class="tabs" aria-label="Primary navigation">
+        <a class="tab-link" href="#home" data-view="home">Home</a>
+        <a class="tab-link" href="#research" data-view="research">Research</a>
+        <a class="tab-link" href="#projects" data-view="projects">Projects</a>
+        <a class="tab-link" href="#sidequests" data-view="sidequests">Sidequests</a>
+        <a class="tab-link" href="#media-consumption" data-view="media-consumption">MediaConsumption</a>
+      </nav>
+
+      <button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch to dark mode">
+        <svg class="theme-icon theme-icon-moon" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M20.7 15.1A8.1 8.1 0 0 1 9 3.3 9 9 0 1 0 20.7 15.1Z"></path>
+        </svg>
+        <svg class="theme-icon theme-icon-sun" viewBox="0 0 24 24" aria-hidden="true">
+          <circle cx="12" cy="12" r="4"></circle>
+          <path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path>
+        </svg>
+      </button>
+    </header>
+
+    <main class="site-main" id="mainContent">
+      <section class="view-panel is-active" id="home" aria-labelledby="home-title">
+        <p class="eyebrow">math, software, archives, and city-light thinking</p>
+        <h1 id="home-title">Mihika Dusad</h1>
+        <p class="lede">
+          I work across research and building: formal questions with clean structure, software that makes ideas easier to use, and side projects that keep a public record of what I am learning.
+        </p>
+
+        <div class="action-row" aria-label="Profile links">
+          <a class="button-link" href="https://www.linkedin.com/in/mihika-dusad/" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a class="button-link" href="https://arxiv.org/abs/2512.12215" target="_blank" rel="noreferrer">Latest preprint</a>
+        </div>
+
+        <div class="feature-grid" aria-label="Homepage highlights">
+          <article class="feature-card">
+            <p class="card-kicker">Research</p>
+            <h2>Discrete tomography and finite geometries</h2>
+            <p>
+              Recent work studies admissible line complexes for the spatial X-ray transform over finite vector spaces.
+            </p>
+          </article>
+
+          <article class="feature-card">
+            <p class="card-kicker">Projects</p>
+            <h2>Small systems, explicit interfaces</h2>
+            <p>
+              A space for tools, experiments, notebooks, and technical artifacts that are useful beyond the first draft.
+            </p>
+          </article>
+
+          <article class="feature-card">
+            <p class="card-kicker">Sidequests</p>
+            <h2>Notes from adjacent curiosities</h2>
+            <p>
+              Essays, lists, sketches, and observations that do not need to become a full project to be worth keeping.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="view-panel" id="research" aria-labelledby="research-title">
+        <p class="eyebrow">research</p>
+        <h1 id="research-title">Questions with structure</h1>
+        <p class="lede">
+          I am interested in combinatorial and geometric problems where the right representation turns a hard-looking system into something countable, visual, or algorithmic.
+        </p>
+
+        <div class="content-list">
+          <article class="content-card">
+            <p class="card-kicker">Preprint</p>
+            <h2>
+              <a href="https://arxiv.org/abs/2512.12215" target="_blank" rel="noreferrer">
+                Solving Admissibility for the Spatial X-Ray Transform On the Two Element Field
+              </a>
+            </h2>
+            <p>
+              A combinatorics preprint on recovering functions over finite vector spaces from sums over prescribed affine subspaces.
+            </p>
+            <div class="meta-row">
+              <span>Combinatorics</span>
+              <span>Finite vector spaces</span>
+              <span>Discrete tomography</span>
+            </div>
+          </article>
+
+          <article class="content-card">
+            <p class="card-kicker">Working interests</p>
+            <h2>Incidence, recovery, and enumerative structure</h2>
+            <p>
+              Problems where algebraic objects can be viewed through graphs, matrices, algorithms, or sampling schemes.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="view-panel" id="projects" aria-labelledby="projects-title">
+        <p class="eyebrow">projects</p>
+        <h1 id="projects-title">Built things and works in progress</h1>
+        <p class="lede">
+          This page can hold polished projects, research code, prototypes, and experiments that are easier to understand with a short writeup than a repository link alone.
+        </p>
+
+        <div class="content-list">
+          <article class="content-card">
+            <p class="card-kicker">Portfolio system</p>
+            <h2>Personal website</h2>
+            <p>
+              A lightweight static site with tabbed navigation, persistent light and dark modes, and New Yorker cover backdrops.
+            </p>
+          </article>
+
+          <article class="content-card">
+            <p class="card-kicker">Research tooling</p>
+            <h2>Computation notes</h2>
+            <p>
+              A future home for scripts, diagrams, and reproducible artifacts connected to research questions.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="view-panel" id="sidequests" aria-labelledby="sidequests-title">
+        <p class="eyebrow">sidequests</p>
+        <h1 id="sidequests-title">Loose threads worth following</h1>
+        <p class="lede">
+          Sidequests are for compact curiosities: a city note, a tiny build, an unexpected rabbit hole, or a question that keeps resurfacing.
+        </p>
+
+        <div class="note-board">
+          <article class="note-card">
+            <h2>Archive habit</h2>
+            <p>Collect the fragments before they become too polished to remember where they started.</p>
+          </article>
+          <article class="note-card">
+            <h2>Visual references</h2>
+            <p>Vintage New Yorker covers, typography, city grids, maps, signs, and small repeated details.</p>
+          </article>
+          <article class="note-card">
+            <h2>Open questions</h2>
+            <p>Short notes on what seems interesting now, with room to grow into projects later.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="view-panel" id="media-consumption" aria-labelledby="media-title">
+        <p class="eyebrow">media consumption</p>
+        <h1 id="media-title">Read, watched, heard, saved</h1>
+        <p class="lede">
+          A personal index for books, papers, films, lectures, albums, articles, and other inputs that changed the texture of a week.
+        </p>
+
+        <div class="media-grid">
+          <article class="media-column">
+            <h2>Reading</h2>
+            <ul>
+              <li>Papers and preprints</li>
+              <li>Essays worth returning to</li>
+              <li>Books in progress</li>
+            </ul>
+          </article>
+          <article class="media-column">
+            <h2>Watching</h2>
+            <ul>
+              <li>Films</li>
+              <li>Talks and lectures</li>
+              <li>Visual references</li>
+            </ul>
+          </article>
+          <article class="media-column">
+            <h2>Listening</h2>
+            <ul>
+              <li>Albums</li>
+              <li>Podcasts</li>
+              <li>Background loops</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
